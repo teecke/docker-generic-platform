@@ -9,11 +9,11 @@ source config.ini
 # @description Operate [start or stop] one platform service or product
 #
 # @example
-#   operateItem service jenkins-redpanda start
-#   operateItem product nallende stop
+#   operateItem service jenkins start
+#   operateItem product webapp stop
 #
 # @arg $1 Type of item: "platform" or "service"
-# @arg $2 Name of the item, like "jenkins-redpanda" or "nallende"
+# @arg $2 Name of the item, like "jenkins" or "webapp"
 # @art $3 Action to perform with the item: start, stop, destroy
 #
 # @exitcode 0 operation successsful
