@@ -1,0 +1,21 @@
+# services
+# 
+# Put here the services you want to execute  
+#
+# services catalog:
+# - jenkins
+# - mail
+# - nexus (TODO)
+# - passbolt (TODO)
+# - sonarqube (TODO)
+services=(jenkins mail)
+
+# products
+#
+# Fill with the desired products
+#
+# products catalog:
+# - webapp
+# - statics
+products=(webapp statics)
+

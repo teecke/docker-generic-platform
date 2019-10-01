@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  jenkins:
+    image: teecke/gp-jenkins:0.1.0
+    ports:
+      - 4002:8080
+      - 5002:5000
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - docker:/var/lib/docker
+    privileged: true
+
+networks:
+    default:
+      external:
+        name: platform_services
+
+volumes:
+  jenkins_home:
+  docker:

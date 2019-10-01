@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  mail:
+    image: teecke/gp-mail:0.1.0
+    volumes:
+      - ./mail:/var/spool/postfix
+    ports:
+      - 0025:0025
+
+networks:
+    default:
+      external:
+        name: platform_services
+
+volumes:
+  mail:

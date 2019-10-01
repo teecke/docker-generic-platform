@@ -1,0 +1,12 @@
+!*.dist
+/config.ini
+
+# Jenkins
+/services/jenkins/jenkins_home/*
+!/services/jenkins/jenkins_home/hudson.tasks.Mailer.xml
+!/services/jenkins/jenkins_home/config.xml
+!/services/jenkins/jenkins_home/org.jenkinsci.main.modules.sshd.SSHD.xml
+!/services/jenkins/jenkins_home/org.jenkinsci.plugins.workflow.libs.GlobalLibraries.xml
+
+# Mail
+/services/mail/mail/*
