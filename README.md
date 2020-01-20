@@ -19,7 +19,7 @@ Learn to work on a platform composed of different components (services and produ
 ## Requirements
 
 - [Docker](https://www.docker.com) installed
-- Teecke [Devcontrol Tool](https://github.com/teecke/devcontrol)installed (3)
+- Teecke [Devcontrol Tool](https://github.com/teecke/devcontrol) installed (3)
 
 ## Components
 
@@ -49,7 +49,7 @@ Developed by the Platform Teams. Used to develop, build and operate the products
    3. Jenkins service: <http://localhost:4002>
    4. Sonar service: <http://localhost:9000>
    5. Nexus service: <http://localhost:8081>
-   6. Passbolt Service: <http://localhost:10080> <http://localhost:10443>
+   6. Passbolt Service: <http://localhost:10080> and <http://localhost:10443>
 3. Stop the platform with `devcontrol platform stop`
 4. Destroy the platform with `devcontrol platform destroy`
 
