@@ -10,3 +10,9 @@
 
 # Mail
 /services/mail/mail/*
+
+# Passbolt
+/services/passbolt/mysql.env
+
+# Sonar
+/services/sonar/.env
