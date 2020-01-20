@@ -5,10 +5,10 @@
 # services catalog:
 # - jenkins
 # - mail
-# - nexus (TODO)
-# - passbolt (TODO)
-# - sonarqube (TODO)
-services=(jenkins mail)
+# - nexus
+# - passbolt
+# - sonarqube
+services=(jenkins mail nexus passbolt sonarqube)
 
 # products
 #

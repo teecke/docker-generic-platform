@@ -1,0 +1,38 @@
+# From official passbolt docker-compose
+# - https://help.passbolt.com/hosting/install/ce/docker
+# - https://github.com/passbolt
+version: '3.4'
+services:
+  db:
+    image: mariadb:10.3
+    env_file:
+      - mysql.env
+    volumes:
+      - database_volume:/var/lib/mysql
+
+  passbolt:
+    image: passbolt/passbolt:2.11.0-debian
+    ports:
+      - 10080:80
+      - 10443:443
+    tty: true
+    depends_on:
+      - db
+    env_file:
+      - passbolt.env
+    volumes:
+      - gpg_volume:/var/www/passbolt/config/gpg
+      - images_volume:/var/www/passbolt/webroot/img/public
+    tmpfs:
+      - /run
+    command: ["/usr/bin/wait-for.sh", "db:3306", "--", "/docker-entrypoint.sh"]
+
+networks:
+    default:
+      external:
+        name: platform_services
+
+volumes:
+  database_volume:
+  gpg_volume:
+  images_volume:
