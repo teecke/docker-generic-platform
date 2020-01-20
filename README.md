@@ -44,12 +44,12 @@ Developed by the Platform Teams. Used to develop, build and operate the products
 
 1. Start all components with `devcontrol platform start`
 2. Check the health of the products and services:
-   1. Webapp product: <http://localhost:8080>
-   2. Statics product: <http://localhost:8090>
-   3. Jenkins service: <http://localhost:4002>
-   4. Sonar service: <http://localhost:9000>
-   5. Nexus service: <http://localhost:8081>
-   6. Passbolt Service: <http://localhost:10080> and <http://localhost:10443>
+   1. Webapp product: <http://localhost:8001>
+   2. Statics product: <http://localhost:8002>
+   3. Jenkins service: <http://localhost:4001>
+   4. Sonar service: <http://localhost:4002>
+   5. Nexus service: <http://localhost:4003>
+   6. Passbolt Service: <http://localhost:4004>
 3. Stop the platform with `devcontrol platform stop`
 4. Destroy the platform with `devcontrol platform destroy`
 
