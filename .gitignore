@@ -13,6 +13,7 @@
 
 # Passbolt
 /services/passbolt/mysql.env
+/services/passbolt/passbolt.env
 
 # Sonar
 /services/sonar/.env
