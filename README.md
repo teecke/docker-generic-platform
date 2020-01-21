@@ -19,7 +19,7 @@ Learn to work on a platform composed of different components (services and produ
 ## Requirements
 
 - [Docker](https://www.docker.com) installed
-- Teecke [Devcontrol Tool](https://github.com/teecke/devcontrol)installed (3)
+- Teecke [Devcontrol Tool](https://github.com/teecke/devcontrol) installed (3)
 
 ## Components
 
@@ -36,14 +36,20 @@ Developed by the Platform Teams. Used to develop, build and operate the products
 
 - Jenkins from [Teecke GP Jenkins](https://github.com/teecke/gp-jenkins).
 - Mail from [Teecke GP Mail](https://github.com/teecke/gp-mail).
+- Nexus from [Teecke GP Nexus](https://github.com/teecke/gp-nexus).
+- Sonar from [Warchant Sonar](https://gist.github.com/Warchant/0d0f0104fe7adf3b310937d2db67b512) recipie.
+- Passbolt fromn [Official Passbolt](https://help.passbolt.com/hosting/install/ce/docker) docker-compose recipie.
 
 ## Operation
 
 1. Start all components with `devcontrol platform start`
 2. Check the health of the products and services:
-   1. Webapp product: <http://localhost:8080>
-   2. Statics product: <http://localhost:8080>
-   3. Jenkins service: <http://localhost:4002>
+   1. Webapp product: <http://localhost:8001>
+   2. Statics product: <http://localhost:8002>
+   3. Jenkins service: <http://localhost:4001>
+   4. Sonar service: <http://localhost:4002>
+   5. Nexus service: <http://localhost:4003>
+   6. Passbolt Service: <http://localhost:4004>
 3. Stop the platform with `devcontrol platform stop`
 4. Destroy the platform with `devcontrol platform destroy`
 

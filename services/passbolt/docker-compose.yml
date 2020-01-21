@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+  passboltdb:
+    image: mariadb:10.3
+    env_file:
+      - mysql.env
+    volumes:
+      - passboltdb:/var/lib/mysql
+
+  passbolt:
+    image: teecke/gp-passbolt:0.1.0
+    ports:
+      - 4004:80
+    tty: true
+    depends_on:
+      - passboltdb
+    env_file:
+      - passbolt.env
+    volumes:
+      - ./data/gpg:/var/www/passbolt/config/gpg
+      - ./data/images:/var/www/passbolt/webroot/img/public
+    tmpfs:
+      - /run
+    command: ["/usr/bin/wait-for.sh", "-t", "30", "passboltdb:3306", "--", "/docker-entrypoint.sh"]
+
+networks:
+    default:
+      external:
+        name: platform_services
+
+volumes:
+  passboltdb:

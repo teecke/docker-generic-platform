@@ -4,8 +4,8 @@ services:
   jenkins:
     image: teecke/gp-jenkins:0.1.0
     ports:
-      - 4002:8080
-      - 5002:5000
+      - 4001:8080
+      - 5001:5000
     volumes:
       - ./jenkins_home:/var/jenkins_home
       - docker:/var/lib/docker
