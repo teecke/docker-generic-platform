@@ -17,4 +17,4 @@
 /services/passbolt/data
 
 # Sonar
-/services/sonar/.env
+/services/sonarqube/.env
