@@ -1,4 +1,5 @@
 version: '3.7'
+
 services:
   passboltdb:
     image: mariadb:10.3
@@ -8,7 +9,7 @@ services:
       - passboltdb:/var/lib/mysql
 
   passbolt:
-    image: teecke/gp-passbolt:0.1.0
+    image: teecke/gp-passbolt:0.2.1
     ports:
       - 4004:80
     tty: true
@@ -17,11 +18,11 @@ services:
     env_file:
       - passbolt.env
     volumes:
-      - ./data/gpg:/var/www/passbolt/config/gpg
-      - ./data/images:/var/www/passbolt/webroot/img/public
+      - ./data/var/www/passbolt/config/gpg:/var/www/passbolt/config/gpg
+      - ./data/var/www/passbolt/webroot/img/public:/var/www/passbolt/webroot/img/public
     tmpfs:
       - /run
-    command: ["/usr/bin/wait-for.sh", "-t", "30", "passboltdb:3306", "--", "/docker-entrypoint.sh"]
+    command: ["/usr/bin/wait-for.sh", "db:3306", "-t", "60", "--", "/docker-entrypoint.sh"]
 
 networks:
     default:
