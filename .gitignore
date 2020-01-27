@@ -1,20 +1,31 @@
 !*.dist
 /config.ini
 
+# statics
+/products/statics/data
+
+# webapp
+/products/webapp/data
+
 # Jenkins
-/services/jenkins/jenkins_home/*
-!/services/jenkins/jenkins_home/hudson.tasks.Mailer.xml
-!/services/jenkins/jenkins_home/config.xml
-!/services/jenkins/jenkins_home/org.jenkinsci.main.modules.sshd.SSHD.xml
-!/services/jenkins/jenkins_home/org.jenkinsci.plugins.workflow.libs.GlobalLibraries.xml
+/services/jenkins/data/var/jenkins_home/*
+/services/jenkins/data/var/jenkins_home/.*
+!/services/jenkins/data/var/jenkins_home/hudson.tasks.Mailer.xml
+!/services/jenkins/data/var/jenkins_home/config.xml
+!/services/jenkins/data/var/jenkins_home/org.jenkinsci.main.modules.sshd.SSHD.xml
+!/services/jenkins/data/var/jenkins_home/org.jenkinsci.plugins.workflow.libs.GlobalLibraries.xml
 
 # Mail
-/services/mail/mail/*
+/services/mail/data
+
+# Nexus
+/services/nexus/data
 
 # Passbolt
-/services/passbolt/mysql.env
-/services/passbolt/passbolt.env
+/services/passbolt/*.env
 /services/passbolt/data
 
-# Sonar
+# SonarQube
 /services/sonarqube/.env
+/services/sonarqube/data
+
