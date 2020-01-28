@@ -120,12 +120,9 @@ EOF
                 cleanup)
                     # Jenkins workspace & docker data
                     echo "# Jenkins Cleanup"
-                    for item in discorder redpanda; do
-                        echo "## ${item}"
-                        cd "${rootdir}/services/jenkins-${item}"
-                        docker-compose exec -T jenkins-dind-${item} docker system prune --all --volumes -f || true
-                        docker-compose exec -T jenkins-dind-${item} rm -rf /var/jenkins_home/workspace/*
-                    done
+                    cd "${rootdir}/services/jenkins"
+                    docker-compose exec -T jenkins docker system prune --all --volumes -f || true
+                    docker-compose exec -T jenkins rm -rf /var/jenkins_home/workspace/*
                     ;;
                 start|stop|destroy)
                     echo "# Doing [${platformAction}] over the services: ${services[*]}"
