@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.2.0 (2020-01-28)
+
+### New
+
+* Add assets-install devcontrol action ([dd09ffe](https://github.com/teecke/docker-generic-platform/commit/dd09ffe))
+
+### Upgrade
+
+* Major refactor of products and services ([a234fd7](https://github.com/teecke/docker-generic-platform/commit/a234fd7))
+
+### Fix
+
+* Remove test platform data ([c4a1aeb](https://github.com/teecke/docker-generic-platform/commit/c4a1aeb))
+
+### Build
+
+* Update Auto Release Log adding v0.2.0 info with JPL ([d16cba6](https://github.com/teecke/docker-generic-platform/commit/d16cba6))
+
+### Docs
+
+* Update main readme ([f3d7518](https://github.com/teecke/docker-generic-platform/commit/f3d7518))
+* Generate v0.1.0 changelog with JPL ([70d940b](https://github.com/teecke/docker-generic-platform/commit/70d940b))
+
 ## v0.1.0 (2020-01-21)
 
 ### New
