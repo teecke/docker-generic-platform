@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.0 (2020-01-29)
+
+### Upgrade
+
+* Refactor jenkins service using gp-jenkins v0.4.0 ([dc23c56](https://github.com/teecke/docker-generic-platform/commit/dc23c56))
+
+### Build
+
+* Update Auto Release Log adding v0.3.0 info with JPL ([0f6cf9a](https://github.com/teecke/docker-generic-platform/commit/0f6cf9a))
+
+### Docs
+
+* Generate v0.2.0 changelog with JPL ([b9bab20](https://github.com/teecke/docker-generic-platform/commit/b9bab20))
+
 ## v0.2.0 (2020-01-28)
 
 ### New
