@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.1 (2020-02-02)
+
+### Update
+
+* Use gp-jenkins 0.4.1 version ([b8b439c](https://github.com/teecke/docker-generic-platform/commit/b8b439c))
+
+### Build
+
+* Update Auto Release Log adding v0.3.1 info with JPL ([bdf607a](https://github.com/teecke/docker-generic-platform/commit/bdf607a))
+
+### Docs
+
+* Generate v0.3.0 changelog with JPL ([676aad5](https://github.com/teecke/docker-generic-platform/commit/676aad5))
+
 ## v0.3.0 (2020-01-29)
 
 ### Upgrade
