@@ -23,7 +23,7 @@ Learn to work on a platform composed of different components (services and produ
 ## Requirements
 
 - [Docker](https://www.docker.com) installed
-- Teecke [Devcontrol Tool](https://github.com/teecke/devcontrol) installed (3)
+- Teecke [Devcontrol Tool](https://github.com/ayudadigital/devcontrol) installed (3)
 
 ## Components
 
@@ -31,16 +31,16 @@ Learn to work on a platform composed of different components (services and produ
 
 Developed by the Business Teams. Defined as the things that the customers or the end users can use.
 
-- Web Application Server [Teecke GP Webapp](https://github.com/teecke/gp-webapp).
-- Statics Server [Teecke GP Statics](https://github.com/teecke/gp-nginx).
+- Web Application Server [Teecke GP Webapp](https://github.com/ayudadigital/gp-webapp).
+- Statics Server [Teecke GP Statics](https://github.com/ayudadigital/gp-nginx).
 
 ### Services
 
 Developed by the Platform Teams. Used to develop, build and operate the products.
 
-- Jenkins from [Teecke GP Jenkins](https://github.com/teecke/gp-jenkins).
-- Mail from [Teecke GP Mail](https://github.com/teecke/gp-mail).
-- Nexus from [Teecke GP Nexus](https://github.com/teecke/gp-nexus).
+- Jenkins from [Teecke GP Jenkins](https://github.com/ayudadigital/gp-jenkins).
+- Mail from [Teecke GP Mail](https://github.com/ayudadigital/gp-mail).
+- Nexus from [Teecke GP Nexus](https://github.com/ayudadigital/gp-nexus).
 - Sonar from [Warchant Sonar](https://gist.github.com/Warchant/0d0f0104fe7adf3b310937d2db67b512) recipie.
 - Passbolt fromn [Official Passbolt](https://help.passbolt.com/hosting/install/ce/docker) docker-compose recipie.
 
@@ -87,6 +87,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 - Fulfill the [The DevOps Hispano Challenge](https://github.com/devops-hispano/reto-devops]) github project (1)
 - Build with [GitOps](https://www.weave.works/technologies/gitops/) Mindset (2)
-- Bash Scripts managed using Teecke [Devcontrol)](https://github.com/teecke/devcontrol) tool (3)
+- Bash Scripts managed using Teecke [Devcontrol)](https://github.com/ayudadigital/devcontrol) tool (3)
 
 ## Known issues
