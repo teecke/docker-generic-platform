@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Please visit https://github.com/tpbtools/docker-generic-platform
+Please visit https://github.com/ayudadigital/docker-generic-platform
 
 # Teecke - Docker Generic Platform
 
